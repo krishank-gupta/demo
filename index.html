@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/de0ba7ce85.js" crossorigin="anonymous"></script>
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+            .fixed-action-btn a {
+                background-color: #0E266E !important;
+            }
+            .tap-target {
+                background-color: #a51e22 !important;
+            }
+            .float{
+	position:fixed;
+	width:90px;
+	height:90px;
+	bottom:20px;
+	left:20px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:60px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+        </style>
+    </head>
+    <body>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large">
+          <i class="fas fa-comments"></i>
+        </a>
+        <ul>
+          <li>
+            <a class="btn-floating tooltipped" data-position="left" data-tooltip="+91 7715888856" href="https://wa.me/+917715888856?text=I%20want%20to%20%23UnMath%20my%20experience" >
+                <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating tooltipped blue-text" data-position="left" data-tooltip="Email us" href="mailto:info@unmathschool.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating tooltipped" data-position="left" data-tooltip="Like us on Facebook" href="https://www.facebook.com/UnMathSchool/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating tooltipped" data-position="left" data-tooltip="Follow us on Instagram" href="https://www.instagram.com/unmathschool/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating tooltipped" data-position="left" data-tooltip="Follow us on Twitter" href="https://twitter.com/UnmathSchool" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating tooltipped" data-position="left" data-tooltip="Follow us on LinkedIn" href="https://www.linkedin.com/company/unmath-school-pvt-ltd/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div> 
+
+      <div class="fixed-action-btn">
+        <a href="https://wa.me/+917715888856?text=I%20want%20to%20%23UnMath%20my%20experience" class="float"  target="_blank">
+          <i class="fa fa-whatsapp my-float"></i>
+        </a>
+      </div>
+              
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          <script>
+                document.addEventListener('DOMContentLoaded', function() {
+    const FloatingActionButton = document.querySelectorAll('.fixed-action-btn');
+    M.FloatingActionButton.init(FloatingActionButton, {});
+    
+    const tooltip = document.querySelectorAll('.tooltipped');
+    M.Tooltip.init(tooltip, {})
+  });
+          </script>
+    </body>
+</html>
